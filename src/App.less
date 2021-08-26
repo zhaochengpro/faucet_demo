@@ -1,0 +1,184 @@
+@import '~antd/dist/antd.less';
+
+.App {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+#root{
+  overflow: hidden;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.App>ul{
+  position: absolute;
+  width: max-content;
+  left: 0;
+  transition: all 0.3s linear;
+}
+.App>img{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 50px;
+  cursor: pointer;
+}
+.App>img:hover{
+  transform: scale(1.5);
+}
+.App .prev{
+  left: 50px;
+}
+.App .next{
+  right: 50px;
+}
+.box{
+  position: relative;
+  width: 100vw;
+  height:100vh;
+  float: left;
+  margin: auto;
+  margin-top: 10px;
+}
+.box .title{
+  width: 100%;
+  height: 50px;
+  font-size: 30px;
+  font-weight: 800;
+}
+.box .second_title{
+  width: 100%;
+  height: 50px;
+  font-size: 30px;
+  font-weight: 800;
+  margin-top: 30px;
+}
+.box .action{
+  width: 100%;
+}
+.box .action input{
+  width: 600px;
+  height: 30px!important;
+  padding: 0px 10px;
+  border:1px solid #ccc
+}
+.box .action button{
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  padding: 0px 10px;
+}
+.box .info{
+  width: 500px;
+  background: #f5f5f5;
+  margin: auto;
+  padding: 10px 15px;
+  border: 2px solid #ddd;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  display: flex;
+  justify-content: center;
+}
+.box .info>.item{
+  /* width: 100px; */
+  height: 100%;
+  margin-left: 20px;
+}
+.box .wapper{
+  width: 500px;
+  margin: auto;
+  margin-top: 30px;
+}
+.box .list{
+  border: 1px solid #ccc;
+  border-bottom: none;
+  overflow: hidden;
+}
+.box .wapper .list .item{
+  position: relative;
+  margin:10px 0px 10px 0px;
+}
+.box .wapper .list .item .address{
+  // position: relative;
+  border: 1px solid #ccc;
+  height: 20px;
+  box-sizing: border-box;
+  background: #f5f5f5;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.box .wapper .list .item .address:hover  .extraInfo{
+  display: inline-block;
+}
+.box .wapper .list .item .process{
+  margin-left: 10px;
+}
+.box .wapper .list .item .loading{
+  display: inline-block;
+  width: 100px;
+  font-size: 12px;
+  /* padding: 0px 5px; */
+  margin-left: 5px;
+}
+.box .wapper .list .item .extraInfo{
+  position: absolute;
+  left: 0px;
+  top: -15px;
+  display: none;
+  width: 100%;
+  text-align: left;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.box .more, .box .moreFaucet{
+  width: 500px;
+  border: 1px solid #ccc;
+  margin: auto;
+  margin-top: 10px;
+  text-align: left;
+  padding: 10px 10px;
+}
+.box .moreFaucet p{
+  margin-left: 20px;
+}
+.box .moreFaucet p:nth-of-type(4){
+  margin-bottom: 5px;
+}
+.box .moreFaucet .topTitle{
+  margin-left: 0;
+}
